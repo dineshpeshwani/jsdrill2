@@ -1,9 +1,10 @@
 function strToNum(str)
 {
     let result = str.replace(/,/g ,"");
-    if(isNaN(result) === false)
+    let result2 = result.replace('$', "");
+    if(isNaN(result2) === false)
     {
-     return (Number(+result));
+     return (Number(+result2));
     }else{
       return "Invalid Input";
     }

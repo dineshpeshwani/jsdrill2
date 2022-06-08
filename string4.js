@@ -1,6 +1,12 @@
-function fullName(first_Name, last_Name)
+function fullName(person)
 {
-    let str = (first_Name.concat(" " ,last_Name));
+    let str;
+    if(person.middle_name != undefined)
+    {
+        str = (person.first_name.concat(" " ,person.middle_name).concat(" ", person.last_name));}
+    else{
+        str = (person.first_name.concat(" ", person.last_name));}
+    
     str = str.toLowerCase().split(' ');
     for (var i = 0; i < str.length; i++) 
     {
