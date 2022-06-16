@@ -1,4 +1,5 @@
 const fullName = require('./string4');
+
 let person1 =  
     {
         "first_name" : "JoHN", 
@@ -10,6 +11,7 @@ let person2 =
         "middle_name" : "doe", 
         "last_name" : "SMith"
     }
+    
 console.log(fullName(person1));
 console.log(fullName(person2));
 

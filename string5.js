@@ -6,5 +6,4 @@ function arrToStr(str){
         return result;
     }
 }
-
 module.exports = arrToStr;
